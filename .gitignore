@@ -1,0 +1,11 @@
+# Compiled source code:
+
+*.exe
+
+
+
+# Logs and databases # 
+
+*.log
+*.sql
+*.sqlite
