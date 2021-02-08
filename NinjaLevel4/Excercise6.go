@@ -1,3 +1,15 @@
+// In my opinion, this is one way to acomplish what the requirement was:
+
+/*
+
+Hands-on exercise #6
+Create a slice to store the names of all of the states in the United States of America. What is the length of your slice? What is the capacity? Print out all of the values, along with their index position in the slice, without using the range clause. Here is a list of the states:
+
+
+It does not mention to use append as the called solution. Excercise6Solution.go has the solution provided by instructor.
+
+*/
+
 package main
 
 import "fmt"
