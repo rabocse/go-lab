@@ -17,7 +17,6 @@ func main() {
 	// Printing the map with "original" values:
 	fmt.Println("###### INITIAL MAP BEFORE ADDING ANOTHER KEY:VALUE #####\n")
 	fmt.Println(m)
-
 	fmt.Println(" ")
 
 	// Adding a new record for my map:
@@ -27,10 +26,12 @@ func main() {
 	fmt.Println("################### MAP LENGTH ########################\n")
 	fmt.Println(len(m))
 	fmt.Println(" ")
+
 	// Printing the map after adding a record:
 	fmt.Println("####### MAP AFTER ADDING \"Magneto\" Key ##############\n")
 	fmt.Printf("THIS IS THE  WHOLE MAP: %v\n", m)
 	fmt.Println(" ")
+
 	// Looping over the map printing the key and value:
 	fmt.Println("################### LOOPING OVER MAP #####################\n")
 	for key, value := range m {
@@ -38,6 +39,7 @@ func main() {
 		fmt.Printf("%v:%v\n", key, value)
 	}
 	fmt.Println(" ")
+
 	// Deleting a record  and then printing the map:
 	fmt.Println("################### \"Quicksilver\" KEY DELETED #####################\n")
 	delete(m, "Quicksilver")
