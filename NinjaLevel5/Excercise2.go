@@ -23,12 +23,20 @@ func main() {
 		favIceCreams: []string{"Chicle", "limon", "mate"},
 	}
 
-	m := map[string]person{p1.lastname: p1, p2.lastname: p2}
+	m := map[string]person{p1.lastname: p1,
+		p2.lastname: p2}
 
-	fmt.Println(m)
+	for k, v := range m {
+		fmt.Printf("\t%v:\n", k)
 
-	fmt.Println(" ")
-	fmt.Println("##########################################################################################################")
-	fmt.Println(" ")
+		fmt.Printf("\t\t\t%v\n", v.firstname)
+		fmt.Printf("\t\t\t%v\n", v.lastname)
+
+		for i, val := range v.favIceCreams {
+
+			fmt.Println(i, val)
+		}
+
+	}
 
 }
