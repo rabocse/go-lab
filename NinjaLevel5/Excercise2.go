@@ -32,7 +32,7 @@ func main() {
 		fmt.Printf("\t\t\t%v\n", v.firstname)
 		fmt.Printf("\t\t\t%v\n", v.lastname)
 
-		for i, val := range v.favIceCreams {
+		for i, val := range v.favIceCreams { // dot-notation can be used since v is person type.
 
 			fmt.Println(i, val)
 		}
