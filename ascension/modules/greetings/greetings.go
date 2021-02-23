@@ -1,4 +1,4 @@
-//Tutorial: Getting Started > Create a module > "start a module that others can use" from golang.org/doc
+//Tutorial: Getting Started > Create a module > "Start a module that others can use" from golang.org/doc
 
 package greetings
 
