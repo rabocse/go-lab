@@ -18,7 +18,7 @@ func bar() (x int, y string) {
 	x = 100
 	y = "hundred"
 
-	return x, y
+	return x, y // return 100, "hundred" // This was another valid way to do it.
 
 }
 
