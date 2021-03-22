@@ -35,9 +35,9 @@ func main() {
 
 	fmt.Println("###################### JSON (Marshaled) ######################################################")
 
-	m, err := json.Marshal(users)
+	m, err := json.Marshal(users) // Keep in mind that Marshal returns a []byte, so those will need to be converted to string to them print them.
 	if err != nil {
 		fmt.Println("Error:", err)
 	}
-	fmt.Println(m)
+	fmt.Println(string(m)) // Converting []byte to string to then print.
 }
