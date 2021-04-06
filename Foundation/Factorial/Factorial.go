@@ -7,8 +7,10 @@ import (
 
 func myfactorial(inputInt int) int {
 
-	if inputInt <= 0 || inputInt > 100 {
-		panic("PANIC !!!!!!!!")
+	if inputInt <= 0 {
+		panic("Factorial cannot be calculated for negative values or zero. Please, enter a positive number")
+	} else if inputInt > 100 {
+		panic("Highest factorial to calculate is 100. Please, do not enter values higher than 100.")
 	} else {
 		factorial := 1
 		for i := 1; i <= inputInt; i++ {
