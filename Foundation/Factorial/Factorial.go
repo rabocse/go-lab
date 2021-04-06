@@ -8,9 +8,9 @@ import (
 func myfactorial(inputInt int) int {
 
 	if inputInt <= 0 {
-		panic("Factorial cannot be calculated for negative values or zero. Please, enter a positive number")
+		panic("PANIC #1 ! Factorial cannot be calculated for negative values or zero. Please, enter a positive number")
 	} else if inputInt > 100 {
-		panic("Highest factorial to calculate is 100. Please, do not enter values higher than 100.")
+		panic("PANIC #2 ! Highest factorial to calculate is 100. Please, do not enter values higher than 100.")
 	} else {
 		factorial := 1
 		for i := 1; i <= inputInt; i++ {
@@ -24,7 +24,10 @@ func main() {
 
 	// Anouynimous function to be deferred and be used later with recover()
 	defer func() {
-		fmt.Println("Deferring the function to then be used with \"recover\"")
+		//		fmt.Println("Deferring the function to then be used with \"recover\"")
+		if r := recover(); r != nil {
+			fmt.Println("Recovered from panic scenario:", r)
+		}
 	}()
 
 	// Run loop to read the number:
