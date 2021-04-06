@@ -20,6 +20,11 @@ func myfactorial(inputInt int) int {
 
 func main() {
 
+	// Anouynimous function to be deferred and be used later with recover()
+	defer func() {
+		fmt.Println("Deferring the function to then be used with \"recover\"")
+	}()
+
 	// Run loop to read the number:
 	for {
 		// Request the number:
