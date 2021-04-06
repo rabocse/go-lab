@@ -20,11 +20,11 @@ func myfactorial(inputInt int) int {
 
 func main() {
 
-	// Request the number:
-	fmt.Print("Enter a positive number: ")
-
 	// Run loop to read the number:
 	for {
+		// Request the number:
+		fmt.Print("Enter a positive number: ")
+
 		var input string
 		fmt.Scanln(&input)
 
@@ -38,14 +38,10 @@ func main() {
 		if err != nil {
 			fmt.Println("Converting from string to int failed:", err)
 		}
-
-		// Now that inputInt is used to define whether is valid value to calculate factorial:
-		//		if inputInt <= 0 || inputInt > 100 {
-		//			panic("PANIC !!!!!!!!")
-
+		// Calculate and print the factorial:
 		fact := myfactorial(inputInt)
-		fmt.Print(fact)
+		fmt.Println(fact)
+		fmt.Println(" ")
 
-		// fmt.Print(factorial)
 	}
 }
