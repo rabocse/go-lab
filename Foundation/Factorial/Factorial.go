@@ -31,6 +31,7 @@ func main() {
 	}()
 
 	// Run loop to read the number:
+
 	for {
 		// Request the number:
 		fmt.Print("Enter a positive number: ")
@@ -54,4 +55,5 @@ func main() {
 		fmt.Println(" ")
 
 	}
+
 }
