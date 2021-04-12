@@ -31,12 +31,27 @@ type Circle struct {
 func (Circle) Draw() {
 	fmt.Println("Drawing a circle...")
 }
+
 func (Circle) Print() {
 	fmt.Println("Printing a circle...")
 }
 
-// func render( a []iGeoshape) {
+// Render function:
+func Render(a ...iGeoshape) {
+	for _, v := range a {
+		v.Draw()
+	}
+}
 
 func main() {
+
+	var rect1 Rectangle
+	var rect2 Rectangle
+	var rect3 Rectangle
+	var circ1 Circle
+	var circ2 Circle
+
+	// Render accepts Rectangle and Circle
+	Render(rect1, rect2, rect3, circ1, circ2)
 
 }

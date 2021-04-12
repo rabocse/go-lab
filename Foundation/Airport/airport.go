@@ -29,9 +29,23 @@ func main() {
 	// Validate three codes are entered
 
 	if len(os.Args) == 4 {
-		fmt.Println("Ok ok")
+		// fmt.Println("Ok ok")
 	} else {
 		fmt.Println("Entry full intinerary (3 codes)")
 	}
+
+	// Compare entered code against map:
+
+
+	for k, _ := range airport {
+
+
+		_, exist = airport
+		k, ok =airport[key]
+
+		fmt.Println(k)
+
+
+	
 
 }
