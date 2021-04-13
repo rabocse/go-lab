@@ -30,7 +30,7 @@ func main() {
 	http.HandleFunc("/eng", englishHandler)
 	http.HandleFunc("/es", spanishHandler)
 	http.HandleFunc("/pl", polishHandler)
-	err := http.ListenAndServe("localhost:8080", nil)
+	err := http.ListenAndServe("localhost:8080", nil) // "nil" to indicate that the requests will be handle by "HandleFunc"
 	log.Fatal(err)
 
 }
